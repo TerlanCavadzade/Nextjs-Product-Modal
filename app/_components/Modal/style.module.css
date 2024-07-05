@@ -1,0 +1,37 @@
+.modal {
+  position: fixed;
+  inset: 0;
+  z-index: 2;
+  isolation: isolate;
+}
+
+.modal > .bg {
+  position: absolute;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.2);
+  z-index: -1;
+}
+
+.modal > .content {
+  z-index: 1;
+  width: min(33rem, 98%);
+  max-height: 90%;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  background-color: white;
+  padding: 1rem 0.5rem;
+  overflow-y: auto;
+}
+
+.modal > .content > .closeBtn {
+  display: block;
+  margin-inline: auto 1rem;
+  appearance: none;
+  border: none;
+  background-color: transparent;
+  font-size: 1.6rem;
+
+  cursor: pointer;
+}

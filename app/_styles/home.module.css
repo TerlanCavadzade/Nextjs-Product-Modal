@@ -1,0 +1,26 @@
+.productList {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(min(33rem, 100%), 1fr));
+  grid-auto-rows: 1fr;
+  list-style: none;
+  gap: 1.5rem;
+}
+
+.productList > li {
+  aspect-ratio: 1;
+}
+
+.productList > li > a {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+
+  color: inherit;
+  text-decoration: none;
+}
+.productList > li > a > .productImg > img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
